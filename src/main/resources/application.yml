@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: micronautReactiveApi
+r2dbc:
+  datasources:
+    default:
+      url: r2dbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: ''
+netty:
+  default:
+    allocator:
+      max-order: 3
