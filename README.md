@@ -18,9 +18,23 @@
 
 - [https://r2dbc.io](https://r2dbc.io)
 
+## Feature jdbc-hikari documentation
+
+- [Micronaut Hikari JDBC Connection Pool documentation](https://micronaut-projects.github.io/micronaut-sql/latest/guide/index.html#jdbc)
+
+
+## Feature data-jdbc documentation
+
+- [Micronaut Data JDBC documentation](https://micronaut-projects.github.io/micronaut-data/latest/guide/index.html#jdbc)
 
 ## Feature testcontainers documentation
 
 - [https://www.testcontainers.org/](https://www.testcontainers.org/)
+
+## Feature flyway documentation
+
+- [Micronaut Flyway Database Migration documentation](https://micronaut-projects.github.io/micronaut-flyway/latest/guide/index.html)
+
+- [https://flywaydb.org/](https://flywaydb.org/)
 
 
