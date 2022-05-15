@@ -25,13 +25,17 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
+    implementation("io.micronaut:micronaut-validation")
+    //kotlin coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("io.r2dbc:r2dbc-postgresql")
+    runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
+
     testImplementation("org.testcontainers:r2dbc")
     testImplementation("org.testcontainers:testcontainers")
-    implementation("io.micronaut:micronaut-validation")
-
-    runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
 }
 
@@ -40,18 +44,18 @@ application {
     mainClass.set("br.com.yan.ApplicationKt")
 }
 java {
-    sourceCompatibility = JavaVersion.toVersion("17")
+    sourceCompatibility = JavaVersion.toVersion("11")
 }
 
 tasks {
     compileKotlin {
         kotlinOptions {
-            jvmTarget = "17"
+            jvmTarget = "11"
         }
     }
     compileTestKotlin {
         kotlinOptions {
-            jvmTarget = "17"
+            jvmTarget = "11"
         }
     }
 }
