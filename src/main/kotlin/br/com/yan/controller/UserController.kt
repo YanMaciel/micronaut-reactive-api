@@ -2,14 +2,12 @@ package br.com.yan.controller
 
 import br.com.yan.model.User
 import br.com.yan.repository.UserRepository
-import io.micronaut.data.annotation.Id
 import io.micronaut.http.HttpResponse
-import io.micronaut.http.HttpResponse.*
+import io.micronaut.http.HttpResponse.notFound
+import io.micronaut.http.HttpResponse.ok
 import io.micronaut.http.MediaType
 import io.micronaut.http.annotation.*
 import kotlinx.coroutines.flow.Flow
-import java.net.URI
-import java.util.*
 
 @Controller("/users")
 class UserController(private val users: UserRepository) {

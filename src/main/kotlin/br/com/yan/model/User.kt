@@ -1,11 +1,12 @@
 package br.com.yan.model
 
-import io.micronaut.data.annotation.*
+import io.micronaut.data.annotation.AutoPopulated
+import io.micronaut.data.annotation.DateCreated
+import io.micronaut.data.annotation.MappedEntity
 import jakarta.persistence.Id
 import java.time.LocalDateTime
-import java.util.*
 
-@MappedEntity(value="users")
+@MappedEntity(value = "users")
 data class User(
 
     @AutoPopulated
